@@ -2,12 +2,12 @@ const calcular = document.getElementById('calcular');
 
 function imc() {
     const nome = document.getElementById('nome').value;
-    const altura = document.getElementById('altura').value; /*vai pegar o valor*/
+    const altura = document.getElementById('altura').value;
     const peso = document.getElementById('peso').value;
     const resultado = document.getElementById('resultado');
 
     if (nome !== '' && altura !== '' && peso !== ''){
-        const valorIMC = (peso / (altura * altura)).toFixed(1); /*toFixed: qtd de casas decimais*/
+        const valorIMC = (peso / (altura * altura)).toFixed(1); 
 
         let classificacao = '';
 
@@ -30,7 +30,7 @@ function imc() {
             classificacao = 'com obesidade grau III!';
         }
 
-        resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}`; /*textContent é o conteúdo da tag*/
+        resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}`;
     }
 
     else{
