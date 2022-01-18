@@ -1,0 +1,78 @@
+main {
+    display: flex; /*O elemento se comporta como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo flexbox.*/
+    width: 95vw; /*largura*/
+    height: 95vh; /*altura*/
+    justify-content: center; /* Embala os itens ao redor do centro */
+    align-items: center; /* Itens posicionados ao redor do centro */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /*os flex items são alinhados de cima para baixo*/
+    background-color: rgba(96, 250, 191, 0.829);
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly; /*os ítens são distribuídos de forma que o espaçamento entre quaisquer dois itens da linha (incluindo entre os ítens e as bordas) seja igual*/
+    border-radius: 20px; /*arredondar as bordas*/
+    box-shadow: 0 0 10px rgb(121, 116, 116);
+} 
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font: bold 2.5rem serif;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between; /*os ítens são distribuídos de forma igual ao longo da linha; o primeiro ítem junto à borda inicial da linha, o último junto à borda final da linha.*/
+    align-items: center;
+}
+.input input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font: bold 1.2rem serif;
+    color: rgb(91, 92, 92);
+    text-align: center;
+}
+.input label {
+    font: bold 1.3rem serif;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background-color: #000;
+    color: aliceblue;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer; /*fica  a "maozinha" quando para o cursor em cima*/
+}
+
+.result {
+    display: flex;
+    margin-top: 15px; /*indica o espaço acima do elemento*/
+    align-items: center;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    font: Arial 1.6rem serif;
+    box-shadow: 0 0 10px black;
+    background-color: #000;
+    color: aliceblue;
+    padding: 20px;
+    box-sizing: border-box; /*O valor padrão desta propriedade é content-box, que considera os valores das propriedades ´border´ e ´padding´ para calcular o tamanho que o elemento ocupa na tela. Porém, ao definirmos ´box-sizing: border-box´, há alteração no cálculo padrão que conhecemos, fazendo com que o navegador passe a considerar a altura e largura do elemento contando o ´padding´ e o ´border´ do elemento.*/
+    user-select: none; /*O texto do elemento e seus subelementos não são selecionáveis.*/
+}
