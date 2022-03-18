@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuso Horário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="title">
+                <h1>FUSO HORÁRIO</h1>
+            </div>
+            <div class="bloco">
+                <div class="input">
+                    <label for="horaSaida">Hora da saída:</label>
+                    <input type="number" id="horaSaida" min="0" max="23">
+                </div>
+                <div class="input">
+                    <label for="tempoViagem">Tempo de viagem:</label>
+                    <input type="number" id="tempoViagem" min="1" max="12">
+                </div>
+                <div class="input">
+                    <label for="fuso">Fuso horário do destino em relação à origem:</label>
+                    <input type="number" id="fuso" min="-5" max="5">
+                </div>
+            </div>
+            <button id="calcular">Calcular</button>
+            <div class="message" id="mensagem"></div>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
